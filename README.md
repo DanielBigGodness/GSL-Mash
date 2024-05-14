@@ -1,2 +1,2 @@
 # GSL-Mash
-We will update the full project when accepted!
+We will update the data when accepted!
