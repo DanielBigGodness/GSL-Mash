@@ -1,0 +1,7 @@
+_target_: src.models.mlp_new.MLP_NEW
+
+data_dir: ${data_dir}/api_mashup
+api_embed_path: embeddings/partial/text_bert_api_embeddings.npy
+mashup_embed_channels: 300
+mlp_output_channels: 300
+weight_decay: 0.00001

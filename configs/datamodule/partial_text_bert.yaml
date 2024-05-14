@@ -1,0 +1,14 @@
+_target_: src.datamodules.mashup_datamodule_new.MashupDataModule
+
+data_dir: ${data_dir}/api_mashup
+num_candidates: 932
+mashup_path: embeddings/text_bert_mashup_embeddings.npy
+api_path: embeddings/partial/text_bert_api_embeddings.npy
+invoked_path: partial_invocation.pkl
+pair_in_training: true
+negative_samples_ratio: 5
+
+train_val_test_split: [3190, 912, 455] # 7: 2: 1
+batch_size: 16 
+num_workers: 12
+pin_memory: true 

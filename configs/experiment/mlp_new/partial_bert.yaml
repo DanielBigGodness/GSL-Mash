@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - override /trainer: default.yaml
+  - override /model: mlp_new.yaml
+  - override /datamodule: partial_text_bert.yaml
+  - override /callbacks: wandb.yaml
+  - override /logger: wandb.yaml
+
+seed: 27
+
+logger:
+  wandb:
+    name: 'g10k1n1'
+    tags: ['partial', 'BERT']
+
+model:
+  api_embed_path: embeddings/partial/text_bert_api_embeddings.npy
+  mashup_embed_channels: 768
+  mlp_output_channels: 300
+  lr: 0.0001
