@@ -18,12 +18,6 @@ def SetSeed(seed):
 
 
 def get_random_mask(features, r, scale, dataset):
-
-    if dataset == 'ogbn-arxiv' or dataset == 'minist' or dataset == 'cifar10' or dataset == 'fashionmnist':
-        probs = torch.full(features.shape, 1 / r)
-        mask = torch.bernoulli(probs)
-        return mask
-
     nones = torch.sum(features > 0.0).float()
     nzeros = features.shape[0] * features.shape[1] - nones
     pzeros = nones / nzeros / r * scale
