@@ -7,7 +7,7 @@ import os
 # recursively searches for `.env` in all folders starting from work dir
 dotenv.load_dotenv(override=True)
 
-@hydra.main(config_path="configs/", config_name="train.yaml",version_base= "1.2") 
+@hydra.main(config_path="configs/", config_name="test.yaml",version_base= "1.2") 
 def main(config: DictConfig):
 
     from src import utils
