@@ -125,5 +125,5 @@ If you do not want to use wandb, you can also choose another log framework. Plea
 
 run the project.
 
-    python train.py experiment=/partial_bert
+    python train.py experiment=mlp_new/partial_bert
 
