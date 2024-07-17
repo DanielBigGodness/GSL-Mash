@@ -2,7 +2,7 @@
 
 ## Project Structure
 The directory structure of new project looks like this:
-
+'''
 │   README.md
 │   requirements.txt               <- File for installing python dependencies
 │   setup.cfg                      <- Configuration of linters and pytest
@@ -58,6 +58,7 @@ The directory structure of new project looks like this:
     ├───shell                      <- Shell/command based tests
     │
     └───unit                       <- Unit tests
+'''
 Installation
 You can install environment by anaconda or docker, and then download the dataset.
 
